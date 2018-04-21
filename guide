@@ -1,0 +1,26 @@
+1- Determine MVP-1
+    Ask the question: What is the essentials, what must the project have in order to be viable/valuable
+    Put together a wish-list of other features that would be great for MVP-2 etc…
+
+2- Requirements
+    What are the functionality requirements
+
+3- User stories
+    highlight nouns as potential classes
+    highlight verbs as potential functions/behaviors
+    discard duplicate find and eliminate redundancies DRY
+
+4- Create class diagram
+    After selecting classes/objects
+    UML Diagram
+    Or just diagram anything in a way that makes sense to you.
+        How do your objects interact, what functions do they need?
+
+5- Decide/Listing technologies
+    Let form follow function
+        i.e. Do you need to persist data? You need a database etc.
+        Also, are you interested in highlighting or building skill in a certain framework etc.
+
+6- Build small starting ONLY w/MVP-1 (the essentials)
+    Test often…
+    When writing unit tests, consider the feature tests you’re already doing. Those are things you can automate into unit tests
