@@ -15,6 +15,24 @@ MVP:
 -Path Progression
 -Completion
 
+COMPONENTS:
+-Login form
+-Signup form
+-Character Loader
+-Character Storage
+-Character Display
+-Placement Test Screen
+-Attributes List(For placement test)
+-Questions List(For placement test)
+-Response Matcher(For placement test)
+-Result Storage(For placement test in db)
+-Results Display(For placement test)
+-Auto Save Function(For progress tracker)
+-Path Loader Function
+-Path Selected Display
+-Path Display
+-Character Screen
+
 
 
 MVP-2:
@@ -37,6 +55,7 @@ MVP-2:
 -Auras purchased with Epic Currency
 -Quotes throughout the journey.
 -Dynamic Ending storyline one a path is completed
+-Add sound effects with freesound.org
 
 MVP-3: I eventually want this app to become a paid app.
 -Hell Mode Unlocked for for monthly subscriptions.
@@ -53,8 +72,18 @@ USER STORIES
 
 -As a user I want to be able to participate in a placement test so I can have a customized suggestion as to what path is best for me.
 
+
 -As a user I want to be able to choose which path I want to master, despite suggestions given to me.
 
 -As a user I want to be able to view my character progress, So I can see where I need to improve.
 
 -As a user I want the game to auto save my data, so I can start where I left off the next time I log in.
+
+
+TECHNOLOGIES:
+
+-Mongo DB - Persisting data.
+-Express - Routing, serving api data.
+-ReactJS - Fast view-technology. Componential environment.
+-Javascript - functionality.
+-CSS - Styling.

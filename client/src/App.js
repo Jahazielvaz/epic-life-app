@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  state = {users: []}
+  state = { users: []}
 
-  componentDidMount(){
+  componentDidMount() {
     fetch('/users')
       .then(res => res.json())
       .then(users => this.setState({ users }))
