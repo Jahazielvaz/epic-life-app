@@ -1,0 +1,78 @@
+#header{
+  text-align: center;
+  border-bottom: 5px solid #72D68D;
+  background: #72D8FF;
+  color: white;
+  padding: 10px 0;
+}
+
+#instructions{
+  margin: 20px 50px;
+  text-align: center;
+}
+
+#avatar{
+  background: url('https://image.freepik.com/free-icon/running-dog-silhouette_318-62956.jpg') center no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  text-align: center;
+}
+
+#char-sel{
+  text-align: center;
+  margin: 40px;
+}
+
+.av-container{
+  display: inline-block;
+  margin: 0 20px;
+
+}
+
+#avs{
+  margin: auto;
+  max-width: 1100px;
+}
+
+.placement-test{
+  margin: 60px;
+}
+
+#test-button{
+  margin: auto;
+  width: 300px;
+  height: 40px;
+  background: #222;
+  color: white;
+  display: block;
+  font-size: 20px;
+}
+
+.paths{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 20px;
+  font-size: 25px;
+  line-height: 190px;
+  font-weight: bolder;
+
+}
+
+#social{
+  border: 6px double #72172F;
+}
+
+#financial{
+  border: 6px double #005E49;
+}
+
+#personal{
+  border: 6px double #D3583C;
+}
+
+#epic{
+  border: 6px double #7705B9;
+}
