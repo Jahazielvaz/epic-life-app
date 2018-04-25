@@ -6,9 +6,9 @@ class Footer extends Component {
     return(
       <div id="footer">
         <ul>
-          <a><li></li></a>
-          <a><li></li></a>
-          <a><li></li></a>
+          <a className= "footLink" href="#"><li>World Rankings</li></a>
+          <a className= "footLink" href="#"><li>Duel a Friend</li></a>
+          <a className= "footLink" href="#"><li>Invite a Friend</li></a>
         </ul>
       </div>
     )
@@ -16,4 +16,4 @@ class Footer extends Component {
 }
 
 
-export default Header;
+export default Footer;

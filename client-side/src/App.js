@@ -4,6 +4,7 @@ import Header from './components/Header.js';
 import Instructions from './components/Instructions.js';
 import Avatars from './components/Avatars.js';
 import PlacementTest from './components/PlacementTest.js';
+import Footer from './components/Footer.js';
 
 class App extends Component {
   state = { users: [] }
@@ -24,6 +25,7 @@ class App extends Component {
           <Avatars className= "avs"/>
         </div><hr/>
         <PlacementTest /><hr/><hr/>
+        <Footer />
       </div>
     );
   }
