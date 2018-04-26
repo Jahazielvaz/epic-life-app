@@ -1,0 +1,27 @@
+e: The onChange function passes a parameter, meant for events. Once you pass in this parameter, you can call that pre-defined parameter in order to select the user input as the value to set.
+
+e.target.value: This is going to make the current value be whatever the user just typed.
+
+EXAMPLE OF E IN ACTION:
+    <form id="login">
+      <input placeholder="Username" value={this.state.username} type="text" onChange={e => this.setState({username: e.target.value})} /><br />
+      <input placeholder="Password" type="password" value={this.state.password} onChange={e => this.setState({password: e.target.value})} />
+
+    </form>
+
+SETTING UP A FUNCTION THAT WORKS WITH YOUR FORM NAME FOR MORE SCALABILITY:
+  EXAMPLE:
+    (This is the function name)
+      change = (e) => {
+        this.setState({
+          [e.target.name]: e.target.value
+        })
+      }
+
+    (This is how you pass it into your form field. This would only work if in your state you had a key called username)
+      state = {
+        username: '',
+        password: '',
+      }
+      
+      <input name="username" value={this.state.username} onChange={e => this.change(e)} />
