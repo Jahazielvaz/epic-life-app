@@ -21,6 +21,7 @@ COMPONENTS:
 -Character Loader
 -Character Storage
 -Character Display
+-Coach Animations(to be combined with instructions component)
 -Placement Test Screen
 -Attributes List(For placement test)
 -Questions List(For placement test)

@@ -24,10 +24,15 @@
 }
 
 #avatar{
+  border: 3px solid #333;
+  text-align: center;
+}
+
+#chosen-image{
   background: url('https://image.freepik.com/free-icon/running-dog-silhouette_318-62956.jpg') center no-repeat;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 250px;
   display: inline-block;
   text-align: center;
 }
@@ -39,7 +44,7 @@
 
 .av-container{
   display: inline-block;
-  margin: 0 20px;
+  margin: 10px;
 
 }
 
@@ -148,4 +153,49 @@ hr{
   min-width: 320px;
   height: 50px;
   color: white;
+}
+
+#signup-container{
+  padding: 50px;
+}
+
+#signup-container input, button{
+  display: block;
+  margin: 10px auto;
+}
+
+#signup-container input{
+  border: 1px solid black;
+  min-width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#signup-container button{
+  border: 1px solid black;
+  min-width: 320px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.name-select{
+  border: 2px solid blue;
+  margin: 0 auto;
+  display: block;
+  min-width: 340px;
+  height: 30px;
+  text-align: center;
+}
+
+#av-button{
+  background: black;
+  color: white;
+  font-size: 20px;
+  display: block;
+  min-width: 340px;
+  height: 30px;
 }
