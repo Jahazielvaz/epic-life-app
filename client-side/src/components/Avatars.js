@@ -24,7 +24,7 @@ class Avatars extends Component {
         <button id='av-button' onClick={chosenName  = <h2>{this.state.avatarName}</h2>}>Save</button>
         <div id="avatar">
           <div id="chosen-image"></div>
-          {this.props.chosenName}
+          {chosenName}
         </div>
       </div>
     )
