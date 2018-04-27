@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const mongotest = require('./routes/mongotest.js');
+const db = require('./config/keys.js').mongoURI;
 
 var app = express();
 
