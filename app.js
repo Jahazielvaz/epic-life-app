@@ -3,12 +3,29 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
+//DB config
+const db = require('./config/keys.js').mongoURL;
+
+// Routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const db = require('./config/keys.js').mongoURI;
 
 var app = express();
+
+//Body parser middleware
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json());
+
+//Connection to DB
+mongoose
+  .connect(db)
+  .then(() => console.log('MongoDB Connected successfully'))
+  .catch((err) => console.log(err));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
