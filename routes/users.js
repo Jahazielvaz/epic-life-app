@@ -20,7 +20,7 @@ router.post('/register', (req, res) => {
       } else {
         const avatar = gravatar.url(req.body.email, {
           s: 200, //Size
-          r: 'pg' //Rating
+          r: 'pg', //Rating
           d: 'mm' //Default
         })
 
@@ -31,8 +31,14 @@ router.post('/register', (req, res) => {
           password: req.body.password
         })
 
-        bcrypt.genSalt(10, () = { //The first parameter is the number of characters, second is the callback. I believe genSalt, and salt are preset. Need to find out what they do.
-
+        bcrypt.genSalt(10, (err, salt) = { //The first parameter is the number of characters, second is the callback. I believe genSalt, and salt are preset. Need to find out what they do.
+          bcrypt.hash(newUser.password, salt, (err, hash) => {
+            if(err) throw err;
+            newUser.password = hash;
+            newUser.save()
+              .then(user => res.json(user
+              .catch(console.log(err));
+          })
         })
       }
     })

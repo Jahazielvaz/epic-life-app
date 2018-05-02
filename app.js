@@ -12,7 +12,6 @@ const db = require('./config/keys.js').mongoURL;
 // Routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const db = require('./config/keys.js').mongoURI;
 
 var app = express();
 
@@ -20,7 +19,7 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
 
-//testing 
+//testing
 //Connection to DB
 mongoose
   .connect(db)
