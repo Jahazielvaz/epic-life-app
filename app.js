@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 //DB config
-const db = require('./config/keys.js').mongoURL;
+const db = require('./config/keys.js').mongoURI;
 
 // Routes
 var indexRouter = require('./routes/index');
