@@ -21,13 +21,6 @@ COMPONENTS:
 -Character Loader
 -Character Storage
 -Character Display
--Coach Animations(to be combined with instructions component)
--Placement Test Screen
--Attributes List(For placement test)
--Questions List(For placement test)
--Response Matcher(For placement test)
--Result Storage(For placement test in db)
--Results Display(For placement test)
 -Auto Save Function(For progress tracker)
 -Path Loader Function
 -Path Selected Display
@@ -37,6 +30,7 @@ COMPONENTS:
 
 
 MVP-2:
+-Coach Animations(to be combined with instructions component)
 -Add guilds (You can have guild challenges where members have to do challenges as a group.)
 -Add a results bar
 -5+ paths
@@ -57,6 +51,13 @@ MVP-2:
 -Quotes throughout the journey.
 -Dynamic Ending storyline one a path is completed
 -Add sound effects with freesound.org
+
+-Placement Test Screen
+-Attributes List(For placement test)
+-Questions List(For placement test)
+-Response Matcher(For placement test)
+-Result Storage(For placement test in db)
+-Results Display(For placement test)
 
 MVP-3: I eventually want this app to become a paid app.
 -Hell Mode Unlocked for for monthly subscriptions.

@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 mongoose
   .connect(db)
   .then(() => console.log('MongoDB Connected successfully'))
+  .then(() => console.log('Main port is 3001'))
   .catch((err) => console.log(err));
 
 

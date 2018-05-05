@@ -9,11 +9,25 @@ import Login from './components/Login.js';
 import SignUp from './components/SignUp.js';
 
 class App extends Component {
-  state = { users: [] }
+  state = {
+    users: []
+    // response: ''
+   }
 
-  componentDidMount() {
-
-  }
+  // componentDidMount() {
+  //   this.callApi()
+  //     .then(res => this.setState({ response: res.express }))
+  //     .catch(err => console.log(err))
+  // }
+  //
+  // callApi = async () => {
+  //   const response = await fetch('./api/users');
+  //   const body = await response.json();
+  //
+  //   if(response.status !== 200) throw Error(body.message)
+  //
+  //   return body;
+  // }
 
   render() {
     return (

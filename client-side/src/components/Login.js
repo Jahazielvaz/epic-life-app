@@ -19,7 +19,7 @@ class Login extends Component{
 
   render(){
     return(
-      <form id="login">
+      <form id="login" action='/api/users/login' method="POST">
         <input name="username" placeholder="Username" value={this.state.username} type="text" onChange={e => this.change(e)} /><br />
         <input name="password" placeholder="Password" type="password" value={this.state.password} onChange={e => this.change(e)} /><br />
 
