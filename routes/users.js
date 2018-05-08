@@ -6,10 +6,21 @@ const jwt = require('jsonwebtoken');
 const keys = require('../config/keys');
 
 //Load User Model
-const User = require('../models/User')
+const User = require('../models/User');
+
+const validateRegisterInput = require('../validation/register');
 
 // POST user information
 router.post('/register', (req, res) => {
+  const { errors, isValid } = validateRegisterInput(req.body);
+
+  //Check validation
+  if(!isValid){
+    return
+      res.status(400).json(errors);
+  }
+
+
   User.findOne({ username: req.body.username })
     .then(user => {
       if(user){

@@ -7,20 +7,18 @@ DESCRIPTION: The purpose of of this app is to help people go from average to epi
 MVP:
 -Login and Signup
 -Character Selection:
--Placement Test
--Test Results
 -Path Selection
 -3 Paths
--Progress Tracker.
 -Path Progression
 -Completion
+
 
 COMPONENTS:
 -Login form
 -Signup form
 -Character Loader
 -Character Storage
--Character Display
+-Character Profile
 -Auto Save Function(For progress tracker)
 -Path Loader Function
 -Path Selected Display
@@ -47,10 +45,13 @@ MVP-2:
 -Accountability checking system to make sure people don't cheat.
 -Character Edit
 -Character Stats Reviewer
+-Placement Test
 -Auras purchased with Epic Currency
 -Quotes throughout the journey.
 -Dynamic Ending storyline one a path is completed
 -Add sound effects with freesound.org
+-Test Results
+-Progress Tracker.
 
 -Placement Test Screen
 -Attributes List(For placement test)
