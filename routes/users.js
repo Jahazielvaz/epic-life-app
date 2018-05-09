@@ -8,21 +8,23 @@ const keys = require('../config/keys');
 //Load User Model
 const User = require('../models/User');
 
-const validateRegisterInput = require('../validation/register');
+// const validateRegisterInput = require('../validator/register');
+
+
 
 // POST user information
 router.post('/register', (req, res) => {
-  const { errors, isValid } = validateRegisterInput(req.body);
+  // const { errors, isValid } = validateRegisterInput(req.body);
 
   //Check validation
-  if(!isValid){
-    return
-      res.status(400).json(errors);
-  }
-
+  // if(!isValid){
+  //   return
+  //     res.status(400).json(errors);
+  // }
 
   User.findOne({ username: req.body.username })
     .then(user => {
+
       if(user){
         return res.status(400).json({userMSG: 'User already exists'})
       } else {
@@ -30,7 +32,7 @@ router.post('/register', (req, res) => {
           s: 200, //Size
           r: 'pg', //Rating
           d: 'mm' //Default
-        })
+        })//End of avatar
 
         const newUser = new User({
           firstname: req.body.firstname,
@@ -50,11 +52,19 @@ router.post('/register', (req, res) => {
             newUser.save()
               .then(user => res.json(user))
               .catch(console.log(err));
-          })
-        })
-      }
-    })
-})
+          })//End of bcrypt hash
+        })//End of gen salt
+
+        // return res.render('')
+      }//End of else
+
+    }) //End of .then
+})  //End of register route
+
+
+
+
+
 
 /* Login Users */
 router.post('/login', (req, res) => {

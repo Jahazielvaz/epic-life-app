@@ -12,7 +12,7 @@ class Avatars extends Component {
 
   render(){
     var chosenName;
-    if(chosenName === !<h2>{this.state.avatarName}</h2>){
+    if(!chosenName === <h2>{this.state.avatarName}</h2>){
       chosenName = <h2>'Doggy'</h2>;
     }
 
