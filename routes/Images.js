@@ -3,20 +3,24 @@ const router = express.Router();
 
 
 //Image model
-const Image = require('../models/Image');
+const Name = require('../models/Image');
 
-//POST image
-router.post('/internal', (req, res) => {
+//POST characters
+// /api/images/charactername
+router.post('/charactername', (req, res) => {
 
-
-  Image.findOne({ url: req.body.image })
-    .then(image => {
-
-      if(image){
-        return res.status(400).json({imgMSG: 'Image already exists'})
+  Name.findOne({ charactername: req.body.charactername })
+    .then(character => {
+      if(character){
+        return res.status(400).json({charMSG: 'Name already exists!'})
       } else {
-        const content = new Image({imagename: req.body.image});
-        console.log('record created correctly')
+        const newChar = new Name({
+          charactername: req.body.charactername
+        })
       }
-    })//End of .then image
-})//End of post route /internal
+    })
+        // res.json({name: req.body.characterName})
+})  //End of post route /internal
+
+
+module.exports = router;
