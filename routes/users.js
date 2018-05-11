@@ -35,6 +35,7 @@ router.post('/register', (req, res) => {
         })//End of avatar
 
         const newUser = new User({
+          puppy: req.body.puppy,
           firstname: req.body.firstname,
           lastname: req.body.lastname,
           email: req.body.email,
@@ -99,9 +100,9 @@ router.post('/login', (req, res) => {
     })
 })
 
-router.get('/test', (req, res) => {
-  res.json({msg: 'This is my test endpoint'})
-})
+// router.get('/test', (req, res) => {
+//   res.json({msg: 'This is my test endpoint'})
+// })
 
 
 module.exports = router;

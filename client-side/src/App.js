@@ -7,6 +7,7 @@ import PlacementTest from './components/PlacementTest.js';
 import Footer from './components/Footer.js';
 import Login from './components/Login.js';
 import SignUp from './components/SignUp.js';
+import Test from './components/Test.js';
 
 class App extends Component {
   state = {
@@ -39,6 +40,7 @@ class App extends Component {
           <Avatars className= "avs" />
           <Avatars className= "avs"/>
           <Avatars className= "avs"/>
+          <Test />
         </div><hr/>
         <PlacementTest />
         <Footer /><hr/><hr/>

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const keys = require('../config/keys');
 
 //Image model
 const Name = require('../models/Image');
@@ -19,6 +19,8 @@ router.post('/charactername', (req, res) => {
         })
       }
     })
+
+    console.log('Charactername Created successfully')
         // res.json({name: req.body.characterName})
 })  //End of post route /internal
 

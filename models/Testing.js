@@ -2,16 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Create Schema
-const UserSchema = new Schema({
-  puppy: {
-    type: String,
-    required: true
-  },
-  firstname: {
-    type: String,
-    required: true
-  },
-  lastname: {
+const TestSchema = new Schema({
+  name: {
     type: String,
     required: true
   },
@@ -36,4 +28,4 @@ const UserSchema = new Schema({
   }
 })
 
-module.exports = User = mongoose.model('users', UserSchema)
+module.exports = Testing = mongoose.model('tests', TestSchema)

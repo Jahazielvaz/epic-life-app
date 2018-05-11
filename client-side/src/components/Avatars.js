@@ -5,10 +5,6 @@ class Avatars extends Component {
     charactername: '',
   }
 
-  avatarCustom = (e) => {
-
-  }
-
 
   render(){
     var chosenName;

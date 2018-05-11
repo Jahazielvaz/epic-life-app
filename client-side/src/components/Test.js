@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
-class SignUp extends Component {
+class Test extends Component {
   state = {
-    puppy: '',
-    firstname: '',
-    lastname: '',
+    name: '',
     email: '',
     avatar: '',
     username: '',
@@ -24,12 +22,10 @@ class SignUp extends Component {
 
   render(){
     return(
-      <form id="signup-container" action="/api/users/register" method="POST">
-        <input placeholder='Puppy' name='puppy' value={this.state.puppy} onChange={e => this.change(e)} />
-        <input placeholder='First Name' name='firstname' value={this.state.firstname} onChange={e => this.change(e)} />
-        <input placeholder='Last Name' name='lastname' value={this.state.lastname} onChange={e => this.change(e)} />
+      <form id="signup-container" action="/api/test" method="POST">
+        <input placeholder='Name' name='name' value={this.state.firstname} onChange={e => this.change(e)} />
         <input placeholder='Email' name='email' value={this.state.email} onChange={e => this.change(e)} />
-        <input placeholder='Your Gravatar Email' name='avatar' value={this.state.avatar} onChange={e => this.change(e)} />
+                <input placeholder='Your Gravatar Email' name='avatar' value={this.state.avatar} onChange={e => this.change(e)} />
         <input placeholder='Username' name='username' value={this.state.username} onChange={e => this.change(e)} />
         <input placeholder='Password' name='password' value={this.state.password} onChange={e => this.change(e)} type="password" />
         <button type="submit">Submit</button>
@@ -39,4 +35,4 @@ class SignUp extends Component {
 }
 
 
-export default SignUp;
+export default Test;
